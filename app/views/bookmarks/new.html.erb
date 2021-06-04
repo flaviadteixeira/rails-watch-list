@@ -1,0 +1,10 @@
+<h1 style="text-align: center">Create a new bookmark: </h1>
+
+<div class="container col-6">
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.association :movie  %>
+    <%= f.input :comment, placeholder: "Add a comment about the movie" %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>
+

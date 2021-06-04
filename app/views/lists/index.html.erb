@@ -1,0 +1,10 @@
+<h1 style="text-align: center">Here is the list of lists</h1>
+
+<ul>
+    <% @lists.each do |list| %>
+        <li><%= list.name %>:<%= link_to 'More details', list %></li>
+    <% end %>
+  </ul>
+
+ <%= link_to 'Create a new list', new_list_path,  class: "btn btn-outline-info" %>
+
