@@ -27,9 +27,7 @@ base_url = "http://tmdb.lewagon.com/movie/top_rated"
     end
 end
 
-List.create(name: 'Favorites 2020')
-List.create(name: 'Horror')
-List.create(name: 'To watch with Bae')
+
 
 
 
